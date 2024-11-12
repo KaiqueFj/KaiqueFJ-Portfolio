@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from './components/Header'
+import Header from "./components/Header";
 import Footer from "./components/footer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Montserrat } from "next/font/google";
 
-
+const montserrat = Montserrat({
+  weight: ["400", "500", "700"], // specify weights as needed
+  subsets: ["latin"], // choose subsets to include, like 'latin', 'latin-ext'
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,11 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  
-      <body>
-       <Header/>
-       {children}
-       <Footer/>
+      <body className={montserrat.className}>
+        <main className="flex flex-col w-full ">
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
