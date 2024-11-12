@@ -22,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <main className="flex flex-col w-full ">
+      <body className={`bg-background ${montserrat.className}`}>
+        <main className="flex flex-col w-full bg-primary-background">
           <Header />
           {children}
           <Footer />

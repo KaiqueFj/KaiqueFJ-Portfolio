@@ -14,6 +14,7 @@ export default {
         "secondary-background": "var(--secondary-background)",
         "primary-text-color": "var(--primary-text-color)",
         "hover-primary-text-color": "var(--hover-primary-text-color)",
+        "border-color": "var(--border-color)",
       },
     },
   },

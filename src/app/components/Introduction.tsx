@@ -37,20 +37,20 @@ export default function Introduction() {
           </div>
         </div>
 
-        <div className="flex justify-end w-2/4 additionalInfo">
-          <div>
+        <div className="flex justify-end w-2/4 additionalInfo ">
+          <div className="gap-4 flex flex-col">
             <Image
               className="rounded-md"
               src="/images/profile-pic.jpg"
               alt="A description of the image"
-              width={400}
-              height={400}
+              width={320}
+              height={320}
             />
             <div className="listContact">
               <ul>
                 <li className="  p-2">
                   <a
-                    className=" hover:text-hover-primary-text-color flex transition text-primary-text-color font-medium text-sm"
+                    className="  items-center hover:text-hover-primary-text-color flex transition text-primary-text-color font-medium text-md"
                     href=""
                   >
                     <i className=" fa-brands fa-github"></i>
@@ -59,11 +59,21 @@ export default function Introduction() {
                 </li>
                 <li className="p-2">
                   <a
-                    className=" hover:text-hover-primary-text-color flex transition text-primary-text-color font-medium text-sm"
+                    className=" items-center  hover:text-hover-primary-text-color flex transition text-primary-text-color font-medium text-md"
                     href=""
                   >
                     <i className=" fa-brands fa-linkedin"></i>
                     <span className="ml-5">Reach me out on Github</span>
+                  </a>
+                </li>
+
+                <li className="p-2">
+                  <a
+                    className=" items-center  hover:text-hover-primary-text-color flex transition text-primary-text-color font-medium text-md"
+                    href="mailto:kaiqueferraz.dev@gmail.com"
+                  >
+                    <i className="fa-regular fa-envelope"></i>
+                    <span className="ml-5">kaiqueferraz.dev@gmail.com</span>
                   </a>
                 </li>
               </ul>
