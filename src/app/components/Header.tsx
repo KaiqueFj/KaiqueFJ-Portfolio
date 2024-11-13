@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Use usePathname instead of useRouter
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const pathname = usePathname(); // Get the current pathname
+  const pathname = usePathname();
 
   return (
     <header className="flex items-center justify-center w-full mt-8">
