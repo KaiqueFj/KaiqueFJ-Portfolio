@@ -43,8 +43,9 @@ body {
   :root {
     --background: #0a0a0a;
     --primary-background: #18181b;
-    --secondary-background: #252529;
+    --secondary-background: #202022;
     --primary-text-color: #e4e4e7;
+    --secondary-text-color: #909098;
     --border-color: #262a31;
 
     --hover-primary-text-color: #8351e7;

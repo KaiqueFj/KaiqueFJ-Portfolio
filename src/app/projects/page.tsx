@@ -1,5 +1,5 @@
-import Introduction from "../components/Introduction";
+import Project from "../components/projects";
 
 export default function Projects() {
-  return <Introduction />;
+  return <Project />;
 }

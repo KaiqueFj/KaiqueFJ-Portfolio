@@ -13,6 +13,7 @@ export default {
         "primary-background": "var(--primary-background)",
         "secondary-background": "var(--secondary-background)",
         "primary-text-color": "var(--primary-text-color)",
+        "secondary-text-color": "var(--secondary-text-color)",
         "hover-primary-text-color": "var(--hover-primary-text-color)",
         "border-color": "var(--border-color)",
       },
