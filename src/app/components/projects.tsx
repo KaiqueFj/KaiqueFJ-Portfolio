@@ -57,26 +57,26 @@ export default function Project() {
           <div className="bg-primary-background p-4 rounded-lg shadow-md">
             <Image
               className="rounded-md shadow-lg"
-              src="/images/crypto-logo-coin.png"
-              alt="Crypto project image"
+              src="/images/chat-icon.png"
+              alt="chat project image"
               width={80}
               height={80}
             />
           </div>
           <div className="flex flex-col justify-between">
             <h3 className="text-xl font-semibold text-primary-text-color">
-              Crypto Tracker
+              Super chat
             </h3>
             <span className="text-secondary-text-color text-sm mb-4">
-              Simplified way to check the crypto market
+              Modern chat app easy to use and friendly
             </span>
             <div className="flex items-center gap-2">
               <i className="fa-solid fa-link text-primary-text-color"></i>
               <a
                 className="text-primary-text-color hover:text-hover-primary-text-color transition"
-                href="https://crypto-currency-pgqa.onrender.com/overview"
+                href="https://super-chat-uhey.onrender.com"
               >
-                Crypto-Tracker.com
+                Super-chat.com
               </a>
             </div>
           </div>
