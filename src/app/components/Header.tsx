@@ -15,7 +15,7 @@ export default function Header() {
               href="/about"
               className={`px-4 py-2 text-primary-text-color font-medium hover:text-hover-primary-text-color transition ${
                 pathname === "/about"
-                  ? "text-hover-primary-text-color"
+                  ? "text-third-text-color"
                   : "text-primary-text-color"
               }`}
             >
@@ -27,7 +27,7 @@ export default function Header() {
               href="/projects"
               className={`px-4 py-2 text-primary-text-color font-medium hover:text-hover-primary-text-color transition ${
                 pathname === "/projects"
-                  ? "text-hover-primary-text-color"
+                  ? "text-third-text-color"
                   : "text-primary-text-color"
               }`}
             >
@@ -39,7 +39,7 @@ export default function Header() {
               href="/hireMe"
               className={`px-4 py-2 text-primary-text-color font-medium hover:text-hover-primary-text-color transition ${
                 pathname === "/hireMe"
-                  ? "text-hover-primary-text-color"
+                  ? "text-third-text-color"
                   : "text-primary-text-color"
               }`}
             >
