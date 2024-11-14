@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    imageSrc: "/images/crypto-logo-coin.png",
+    imageSrc: "/images/icons/crypto-logo-coin.png",
     title: "Crypto Tracker",
     description: "Simplified way to check the crypto market",
     technologies: [
@@ -18,7 +18,7 @@ const projects = [
     linkText: "Crypto-tracker.com",
   },
   {
-    imageSrc: "/images/chat-icon.png",
+    imageSrc: "/images/icons/chat-icon.png",
     title: "Super Chat",
     description: "Modern chat app easy to use and friendly",
     technologies: [
@@ -43,7 +43,7 @@ export default function Project() {
         <h1 className="text-3xl md:text-4xl font-bold text-primary-text-color leading-tight">
           Crafting Solutions, Shaping the Future
         </h1>
-        <div className="text-base md:text-lg space-y-6 text-primary-text-color">
+        <div className="text-base md:text-lg space-y-6 text-secondary-text-color">
           <p>
             Each project here represents a step in my journey from curiosity to
             impact. Driven by a love for coding and problem-solving, I’m

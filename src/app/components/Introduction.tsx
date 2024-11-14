@@ -9,7 +9,7 @@ export default function Introduction() {
             "  Hi, I'm Kaique – passionate about creating innovative solutions and always exploring new ideas to shape the future"
           }
         </h1>
-        <div className="text-base md:text-lg space-y-6 text-primary-text-color">
+        <div className="text-base md:text-lg space-y-6 text-secondary-text-color">
           <p>
             My journey into technology began as a kid, fascinated by how the
             world works. I started solving math problems using Python, and that
