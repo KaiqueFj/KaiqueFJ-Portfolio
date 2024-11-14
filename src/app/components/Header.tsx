@@ -91,9 +91,9 @@ export default function Header() {
         <ul className="flex flex-col items-start mt-16 space-y-4 pl-6">
           <li>
             <Link
-              href="/about"
+              href="/"
               className={`text-lg font-medium hover:text-hover-primary-text-color transition ${
-                pathname === "/about"
+                pathname === "/"
                   ? "text-third-text-color"
                   : "text-primary-text-color"
               }`}
@@ -141,9 +141,9 @@ export default function Header() {
         <ul className="flex items-center space-x-6 bg-secondary-background rounded-full ring-1  ring-white/10 px-4 py-2">
           <li>
             <Link
-              href="/about"
+              href="/"
               className={`px-4 py-2 text-primary-text-color font-medium hover:text-hover-primary-text-color transition ${
-                pathname === "/about"
+                pathname === "/"
                   ? "text-third-text-color"
                   : "text-primary-text-color"
               }`}

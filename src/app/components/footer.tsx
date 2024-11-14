@@ -7,19 +7,19 @@ export default function Footer() {
           <div className="flex gap-6 text-primary-text-color text-sm">
             <a
               className="transition hover:text-hover-primary-text-color"
-              href="#"
+              href="/"
             >
               About
             </a>
             <a
               className="transition hover:text-hover-primary-text-color"
-              href="#"
+              href="/projects"
             >
               Projects
             </a>
             <a
               className="transition hover:text-hover-primary-text-color"
-              href="#"
+              href="/hireMe"
             >
               Hire Me
             </a>
