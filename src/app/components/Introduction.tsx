@@ -31,7 +31,7 @@ export default function Introduction() {
       </div>
 
       <div className="flex justify-center md:justify-end w-full md:w-1/2 additionalInfo px-4 md:px-0">
-        <div className="gap-6 flex flex-col items-center">
+        <div className="gap-6 flex flex-col  items-center">
           <Image
             className="rounded-md shadow-lg"
             src="/images/profile-pic.jpg"

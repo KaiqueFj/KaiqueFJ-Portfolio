@@ -1,4 +1,39 @@
-import Image from "next/image";
+import ProjectCard from "./ProjectCard";
+
+const projects = [
+  {
+    imageSrc: "/images/crypto-logo-coin.png",
+    title: "Crypto Tracker",
+    description: "Simplified way to check the crypto market",
+    technologies: [
+      {
+        iconClass: "fa-brands fa-node-js text-base text-green-300",
+        name: "NodeJS",
+      },
+      { iconClass: "fa-solid fa-database text-base", name: "MongoDB" },
+      { iconClass: "fa-solid fa-paw text-base", name: "Pug template" },
+      { iconClass: "fa-solid fa-frog text-base", name: "CoinGecko" },
+    ],
+    link: "https://crypto-currency-pgqa.onrender.com/overview",
+    linkText: "Crypto-tracker.com",
+  },
+  {
+    imageSrc: "/images/chat-icon.png",
+    title: "Super Chat",
+    description: "Modern chat app easy to use and friendly",
+    technologies: [
+      {
+        iconClass: "fa-brands fa-node-js text-base text-green-300",
+        name: "NodeJS",
+      },
+      { iconClass: "fa-solid fa-database text-base", name: "MongoDB" },
+      { iconClass: "fa-solid fa-paw text-base", name: "Pug template" },
+      { iconClass: "fa-solid fa-network-wired text-base", name: "Socket.io" },
+    ],
+    link: "https://super-chat-uhey.onrender.com",
+    linkText: "Super-chat.com",
+  },
+];
 
 export default function Project() {
   return (
@@ -21,66 +56,18 @@ export default function Project() {
       </div>
 
       {/* Projects Section */}
-      <div className="projects w-full flex flex-row gap-6">
-        {/* Project Card 1 */}
-        <div className="flex flex-col md:flex-row gap-6 w-full rounded-lg shadow-xl bg-background p-6 space-y-4 transform duration-300 hover:scale-105">
-          <div className="bg-primary-background p-4 rounded-lg shadow-md">
-            <Image
-              className="rounded-md shadow-lg"
-              src="/images/crypto-logo-coin.png"
-              alt="Crypto project image"
-              width={80}
-              height={80}
-            />
-          </div>
-          <div className="flex flex-col justify-between">
-            <h3 className="text-xl font-semibold text-primary-text-color">
-              Crypto Tracker
-            </h3>
-            <span className="text-secondary-text-color text-sm mb-4">
-              Simplified way to check the crypto market
-            </span>
-            <div className="flex items-center gap-2">
-              <i className="fa-solid fa-link text-primary-text-color"></i>
-              <a
-                className="text-primary-text-color hover:text-hover-primary-text-color transition"
-                href="https://crypto-currency-pgqa.onrender.com/overview"
-              >
-                Crypto-Tracker.com
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Project Card 2 */}
-        <div className="flex flex-col md:flex-row gap-6 w-full rounded-lg shadow-xl bg-background p-6 space-y-4 transform duration-300 hover:scale-105">
-          <div className="bg-primary-background p-4 rounded-lg shadow-md">
-            <Image
-              className="rounded-md shadow-lg"
-              src="/images/chat-icon.png"
-              alt="chat project image"
-              width={80}
-              height={80}
-            />
-          </div>
-          <div className="flex flex-col justify-between">
-            <h3 className="text-xl font-semibold text-primary-text-color">
-              Super chat
-            </h3>
-            <span className="text-secondary-text-color text-sm mb-4">
-              Modern chat app easy to use and friendly
-            </span>
-            <div className="flex items-center gap-2">
-              <i className="fa-solid fa-link text-primary-text-color"></i>
-              <a
-                className="text-primary-text-color hover:text-hover-primary-text-color transition"
-                href="https://super-chat-uhey.onrender.com"
-              >
-                Super-chat.com
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className="projects w-full flex flex-col md:flex-row gap-6">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            imageSrc={project.imageSrc}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            link={project.link}
+            linkText={project.linkText}
+          />
+        ))}
       </div>
     </div>
   );
