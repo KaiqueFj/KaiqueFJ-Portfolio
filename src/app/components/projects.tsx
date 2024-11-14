@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    imageSrc: "/images/icons/crypto-logo-coin.png",
+    imageSrc: "/Images/icons/crypto-logo-coin.png",
     title: "Crypto Tracker",
     description: "Simplified way to check the crypto market",
     technologies: [
@@ -18,7 +18,7 @@ const projects = [
     linkText: "Crypto-tracker.com",
   },
   {
-    imageSrc: "/images/icons/chat-icon.png",
+    imageSrc: "/Images/icons/chat-icon.png",
     title: "Super Chat",
     description: "Modern chat app easy to use and friendly",
     technologies: [

@@ -16,16 +16,16 @@ export const metadata: Metadata = {
     "Portfolio created as a showcase about me, my projects and my career",
   icons: {
     icon: [
-      { rel: "icon", url: "/images/favicon/favicon-16x16.png", sizes: "16x16" },
-      { rel: "icon", url: "/images/favicon/favicon-32x32.png", sizes: "32x32" },
+      { rel: "icon", url: "/Images/favicon/favicon-16x16.png", sizes: "16x16" },
+      { rel: "icon", url: "/Images/favicon/favicon-32x32.png", sizes: "32x32" },
       {
         rel: "icon",
-        url: "/images/favicon/favicon-192x192.png",
+        url: "/Images/favicon/favicon-192x192.png",
         sizes: "192x192",
       },
       {
         rel: "icon",
-        url: "/images/favicon/favicon-512x512.png",
+        url: "/Images/favicon/favicon-512x512.png",
         sizes: "512x512",
       },
     ],
