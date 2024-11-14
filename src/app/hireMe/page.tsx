@@ -8,7 +8,7 @@ export default function HireMe() {
         <h1 className="text-4xl font-bold">
           {"   Let's Build Something Great Together"}
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-secondary-text-color">
           I’m a passionate developer dedicated to crafting high-quality,
           impactful projects. Whether you need a dynamic website, a real-time
           chat application, or a streamlined dashboard, I have the expertise to
