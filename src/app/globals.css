@@ -39,23 +39,43 @@ body {
   -ms-flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --primary-background: #18181b;
-    --secondary-background: #202022;
-    --primary-text-color: #e4e4e7;
-    --secondary-text-color: #909098;
-    --third-text-color: #8351e7;
-    --border-color: #262a31;
+.dark {
+  --background: #0a0a0a;
+  --primary-background: #18181b;
+  --secondary-background: #202022;
+  --primary-text-color: #e4e4e7;
+  --secondary-text-color: #909098;
+  --third-text-color: #8351e7;
+  --border-color: #262a31;
 
-    --hover-primary-text-color: #8351e7;
+  --hover-primary-text-color: #8351e7;
 
-    --tw-text-opacity: 1;
-  }
+  --tw-text-opacity: 1;
 }
 
+.light {
+  --background: #ffffff;
+  --primary-background: #f9f9f9;
+  --secondary-background: #eaeaea;
+  --primary-text-color: #333333;
+  --secondary-text-color: #666666;
+  --third-text-color: #7b6eff;
+  --border-color: #dcdcdc;
+
+  --hover-primary-text-color: #7b6eff;
+
+  --tw-text-opacity: 1;
+}
 body {
   background: var(--primary-background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adds a smoother transition when changing the theme */
+.light,
+.dark,
+header,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
