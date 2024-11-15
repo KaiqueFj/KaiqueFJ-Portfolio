@@ -1,6 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 export default function HireMe() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    await fetch("https://formspree.io/f/mwpkbaer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    setFormData({ name: "", email: "", message: "" }); // Clear the form
+  };
+
   return (
     <div className="hire-me min-h-screen bg-g text-primary-text-color p-8 max-w-screen-lg mx-auto">
       {/* Introduction */}
@@ -10,9 +36,7 @@ export default function HireMe() {
         </h1>
         <p className="text-lg text-secondary-text-color">
           I’m a passionate developer dedicated to crafting high-quality,
-          impactful projects. Whether you need a dynamic website, a real-time
-          chat application, or a streamlined dashboard, I have the expertise to
-          bring your vision to life.
+          impactful projects.
         </p>
       </section>
 
@@ -37,8 +61,7 @@ export default function HireMe() {
         <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
         <form
           className="bg-secondary-background p-6 rounded-lg shadow-md space-y-4"
-          action="https://formspree.io/f/mwpkbaer"
-          method="POST"
+          onSubmit={handleSubmit}
         >
           <div>
             <label htmlFor="name" className="block text-primary-text-color">
@@ -48,6 +71,8 @@ export default function HireMe() {
               type="text"
               id="name"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
               required
               className="w-full p-2 bg-primary-background border-2 border-border-color rounded"
             />
@@ -60,6 +85,8 @@ export default function HireMe() {
               type="email"
               id="email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
               required
               className="w-full p-2 bg-primary-background border-2 border-border-color rounded"
             />
@@ -72,6 +99,8 @@ export default function HireMe() {
               id="message"
               name="message"
               rows={4}
+              value={formData.message}
+              onChange={handleChange}
               required
               className="w-full p-2 bg-primary-background border-2 border-border-color rounded"
             ></textarea>

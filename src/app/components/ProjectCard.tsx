@@ -23,8 +23,8 @@ export default function ProjectCard({
   linkText,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-6 w-full rounded-lg shadow-xl bg-background p-6 space-y-4 transform duration-300 hover:scale-105">
-      <div className="bg-primary-background p-4 rounded-lg h-fit shadow-md">
+    <div className="flex flex-col md:flex-row gap-6 w-fit md:w-full rounded-lg shadow-xl bg-background p-6 space-y-4 transform duration-300 hover:scale-105">
+      <div className="bg-primary-background p-4 rounded-lg h-fit w-fit md:w-auto shadow-md">
         <Image
           className="rounded-md shadow-lg"
           src={imageSrc}

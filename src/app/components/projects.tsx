@@ -41,7 +41,7 @@ export default function Project() {
       {/* Introduction Section */}
       <div className="introduction w-full space-y-6 px-4 md:px-0">
         <h1 className="text-3xl md:text-4xl font-bold text-primary-text-color leading-tight">
-          Crafting Solutions, Shaping the Future
+          Software engineer Crafting Solutions, Shaping the Future
         </h1>
         <div className="text-base md:text-lg space-y-6 text-secondary-text-color">
           <p>
@@ -56,7 +56,7 @@ export default function Project() {
       </div>
 
       {/* Projects Section */}
-      <div className="projects w-full flex flex-col md:flex-row gap-6">
+      <div className="projects w-full flex flex-col items-center md:flex-row gap-6">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
