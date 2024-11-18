@@ -107,7 +107,7 @@ export default function HireMe() {
           </div>
           <button
             type="submit"
-            className="w-full p-2 bg-primary-background text-primary-text-color font-semibold rounded hover:bg-hover-primary-text-color transition"
+            className="w-full p-2 bg-primary-background text-fourth-text-color font-semibold rounded hover:bg-hover-primary-text-color transition"
           >
             Send Message
           </button>

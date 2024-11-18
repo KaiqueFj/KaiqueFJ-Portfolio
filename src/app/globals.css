@@ -46,9 +46,12 @@ body {
   --primary-text-color: #e4e4e7;
   --secondary-text-color: #909098;
   --third-text-color: #8351e7;
+  --fourth-text-color: #ffffff;
+
   --border-color: #262a31;
 
   --hover-primary-text-color: #8351e7;
+  --hover-primary-text-color-contrast: #663fb3;
 
   --tw-text-opacity: 1;
 }
@@ -60,9 +63,11 @@ body {
   --primary-text-color: #333333;
   --secondary-text-color: #666666;
   --third-text-color: #7b6eff;
+  --fourth-text-color: #ffffff;
   --border-color: #dcdcdc;
 
   --hover-primary-text-color: #7b6eff;
+  --hover-primary-text-color-contrast: #663fb3;
 
   --tw-text-opacity: 1;
 }

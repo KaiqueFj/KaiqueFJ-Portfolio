@@ -162,6 +162,21 @@ export default function Introduction() {
             </ul>
           </div>
         </div>
+
+        {/* Get resume section */}
+        <div className="listContact border-2 w-full sm:w-2/3 bg-purple-700  hover:bg-hover-primary-text-color transition flex flex-col rounded-lg border-border-color shadow-sm shadow-border-color items-center p-3">
+          {/* Content */}
+          <div className="flex flex-col  ">
+            <a
+              href="/cv/Kaique-Ferraz-de-Jesus-CV-US.pdf"
+              download="Kaique_Ferraz_Resume.pdf"
+            >
+              <button className="btn-download text-base font-medium text-fourth-text-color">
+                Get my resume
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
