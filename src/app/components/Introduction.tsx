@@ -168,7 +168,7 @@ export default function Introduction() {
           {/* Content */}
           <div className="flex flex-col  ">
             <a
-              href="/cv/Kaique-Ferraz-de-Jesus-CV-US.pdf"
+              href="/Cv/Kaique-Ferraz-de-Jesus-CV-US.pdf"
               download="Kaique_Ferraz_Resume.pdf"
             >
               <button className="btn-download text-base font-medium text-fourth-text-color">
