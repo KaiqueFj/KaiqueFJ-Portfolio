@@ -23,8 +23,8 @@ export default function ProjectCard({
   linkText,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-6 w-fit md:w-full rounded-lg shadow-xl bg-background p-6 space-y-4 transform duration-300 hover:scale-105">
-      <div className="bg-primary-background p-4 rounded-lg h-fit w-fit md:w-auto shadow-md">
+    <div className="flex flex-col gap-6 w-fit md:w-full rounded-lg max-h-fit shadow-xl bg-background p-6 space-y-4 transform duration-300 hover:scale-105">
+      <div className="bg-primary-background p-4 rounded-lg h-fit w-fit md:w-fit shadow-md">
         <Image
           className="rounded-md shadow-lg"
           src={imageSrc}
@@ -47,10 +47,16 @@ export default function ProjectCard({
         <div className="tech-stack text-primary-text-color">
           <div className="flex flex-col gap-4">
             <h4 className="text-primary-text-color mb-3">Technologies Used:</h4>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-4">
               {technologies.map((tech, index) => (
-                <li key={index} className="flex items-center gap-4">
-                  <i className={tech.iconClass}></i>
+                <li key={index} className="flex items-center gap-2">
+                  <Image
+                    src={tech.iconClass}
+                    alt={tech.name}
+                    width={25}
+                    height={25}
+                    className="text-base"
+                  />
                   <span>{tech.name}</span>
                 </li>
               ))}

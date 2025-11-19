@@ -4,15 +4,13 @@ const projects = [
   {
     imageSrc: "/Images/icons/crypto-logo-coin.png",
     title: "Crypto Tracker",
-    description: "Simplified way to check the crypto market",
+    description:
+      "Simplified way to check the crypto market, prices, fear markets and more.",
     technologies: [
-      {
-        iconClass: "fa-brands fa-node-js text-base text-green-300",
-        name: "NodeJS",
-      },
-      { iconClass: "fa-solid fa-database text-base", name: "MongoDB" },
-      { iconClass: "fa-solid fa-paw text-base", name: "Pug template" },
-      { iconClass: "fa-solid fa-frog text-base", name: "CoinGecko" },
+      { iconClass: "/Images/icons/nodeJS-logo.png", name: "NodeJS" },
+      { iconClass: "/Images/icons/mongoDB-icon.png", name: "MongoDB" },
+      { iconClass: "/Images/icons/pug-final-logo.png", name: "Pug template" },
+      { iconClass: "/Images/icons/coinGecko-logo.png", name: "CoinGecko" },
     ],
     link: "https://crypto-currency-pgqa.onrender.com/overview",
     linkText: "Crypto-tracker.com",
@@ -20,18 +18,30 @@ const projects = [
   {
     imageSrc: "/Images/icons/chat-icon.png",
     title: "Super Chat",
-    description: "Modern chat app easy to use and friendly",
+    description: "Modern chat app easy to use, friendly and secure",
     technologies: [
-      {
-        iconClass: "fa-brands fa-node-js text-base text-green-300",
-        name: "NodeJS",
-      },
-      { iconClass: "fa-solid fa-database text-base", name: "MongoDB" },
-      { iconClass: "fa-solid fa-paw text-base", name: "Pug template" },
-      { iconClass: "fa-solid fa-network-wired text-base", name: "Socket.io" },
+      { iconClass: "/Images/icons/nodeJS-logo.png", name: "NodeJS" },
+
+      { iconClass: "/Images/icons/mongoDB-icon.png", name: "MongoDB" },
+      { iconClass: "/Images/icons/pug-final-logo.png", name: "Pug template" },
+      { iconClass: "/Images/icons/socket-icon.png", name: "Socket.io" },
     ],
     link: "https://super-chat-uhey.onrender.com",
     linkText: "Super-chat.com",
+  },
+  {
+    imageSrc: "/Images/icons/icon.png",
+    title: "Sneakers Store",
+    description:
+      "Nike-inspired sneaker shop with dynamic UI and full shopping workflow.",
+    technologies: [
+      { iconClass: "/Images/icons/nextjs-icon.png", name: "NextJS" },
+      { iconClass: "/Images/icons/nextAuth-icon.png", name: "NextAuth" },
+      { iconClass: "/Images/icons/supabase-icon.png", name: "Supabase" },
+      { iconClass: "/Images/icons/tailwind-icon.png", name: "Tailwind" },
+    ],
+    link: "https://sharkf-store.netlify.app",
+    linkText: "Sneakers-store.app",
   },
 ];
 

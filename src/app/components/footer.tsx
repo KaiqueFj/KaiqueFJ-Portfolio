@@ -28,7 +28,8 @@ export default function Footer() {
           </div>
           {/* Copyright Section */}
           <p className="text-primary-text-color text-sm mt-4 md:mt-0">
-            © 2024 Kaique Ferraz de Jesus. All Rights Reserved.
+            © {new Date().getFullYear()} Kaique Ferraz de Jesus. All Rights
+            Reserved.
           </p>
         </div>
       </div>
